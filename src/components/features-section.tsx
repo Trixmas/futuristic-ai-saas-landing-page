@@ -135,7 +135,7 @@ export function FeaturesSection() {
                           duration: 20,
                           repeat: Number.POSITIVE_INFINITY,
                         }}
-                        className="-translate-y-1/2 -translate-x-1/2 absolute top-1/2 left-0 inline-flex size-10 items-center justify-center rounded-lg border bg-black md:size-14"
+                        className="absolute top-1/2 left-0 inline-flex size-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-lg border bg-black md:size-14"
                       >
                         <Image
                           src={integration.src}

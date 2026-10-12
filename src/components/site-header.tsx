@@ -59,21 +59,21 @@ export function SiteHeader() {
               aria-label="Menu"
               onClick={() => setOpenMobileNavigationMenu((open) => !open)}
             >
-              <div className="-translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <div
                   className={cn(
-                    "-translate-y-1 h-0.5 w-4 bg-gray-100",
+                    "h-0.5 w-4 -translate-y-1 bg-gray-100",
                     openMobileNavigationMenu &&
                       "translate-y-0 rotate-45 transition duration-300",
                   )}
                 />
               </div>
-              <div className="-translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <div
                   className={cn(
                     "h-0.5 w-4 translate-y-1 bg-gray-100",
                     openMobileNavigationMenu &&
-                      "-rotate-45 translate-y-0 transition duration-300",
+                      "translate-y-0 -rotate-45 transition duration-300",
                   )}
                 />
               </div>

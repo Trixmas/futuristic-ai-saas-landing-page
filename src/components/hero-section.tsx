@@ -40,8 +40,8 @@ export function HeroSection() {
       <div className="container">
         <SectionWrapperBorder>
           <SectionWrapperContent className="relative isolate [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
-            <div className="-z-10 absolute inset-0 bg-[radial-gradient(circle_farthest-corner,var(--color-fuchsia-900)_50%,var(--color-violet-400)_75%,transparent)] [mask-image:radial-gradient(circle_farthest-side,black,transparent)]">
-              <div className="-z-10 absolute inset-0">
+            <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_farthest-corner,var(--color-fuchsia-900)_50%,var(--color-violet-400)_75%,transparent)] [mask-image:radial-gradient(circle_farthest-side,black,transparent)]">
+              <div className="absolute inset-0 -z-10">
                 <OrbitCircle className="size-[350px] border-white/30" />
                 <OrbitCircle className="size-[600px] border-white/30" />
                 <OrbitCircle className="size-[850px] border-white/30" />
@@ -55,7 +55,7 @@ export function HeroSection() {
                 <span className="relative">
                   <span>Sphereal</span>
                   <span
-                    className="-translate-y-1/2 absolute top-full left-0 h-4 w-full bg-[linear-gradient(to_right,var(--color-amber-300),var(--color-teal-300),var(--color-violet-400),var(--color-fuchsia-400))]"
+                    className="absolute top-full left-0 h-4 w-full -translate-y-1/2 bg-[linear-gradient(to_right,var(--color-amber-300),var(--color-teal-300),var(--color-violet-400),var(--color-fuchsia-400))]"
                     style={{
                       maskImage: `url(${UnderlineImage.src})`,
                       maskSize: "contain",
@@ -86,7 +86,7 @@ export function HeroSection() {
                 <motion.div
                   style={{ x: translateLargeGlobeX, y: translateLargeGlobeY }}
                 >
-                  <MiniGlobe className="-translate-y-[185px] -rotate-135 translate-x-[335px]" />
+                  <MiniGlobe className="translate-x-[335px] -translate-y-[185px] -rotate-135" />
                 </motion.div>
                 <motion.div
                   style={{ x: translateMediumGlobeX, y: translateMediumGlobeY }}
@@ -94,7 +94,7 @@ export function HeroSection() {
                   <MiniGlobe
                     size="md"
                     color="teal"
-                    className="-translate-y-[340px] -rotate-135 translate-x-[485px]"
+                    className="translate-x-[485px] -translate-y-[340px] -rotate-135"
                   />
                 </motion.div>
                 <motion.div
@@ -103,11 +103,11 @@ export function HeroSection() {
                   <MiniGlobe
                     size="sm"
                     color="fuchsia"
-                    className="-translate-y-[370px] -translate-x-[510px]"
+                    className="-translate-x-[510px] -translate-y-[370px]"
                   />
                 </motion.div>
               </div>
-              <div className="-translate-x-10 absolute top-[30%] left-0 z-10 w-72 max-lg:hidden">
+              <div className="absolute top-[30%] left-0 z-10 w-72 -translate-x-10 max-lg:hidden">
                 <motion.div
                   style={{ y: transformedY }}
                   className="rounded-xl border bg-neutral-800/70 p-4 backdrop-blur-md"
@@ -138,7 +138,7 @@ export function HeroSection() {
                   className="aspect-video h-full w-auto"
                   draggable={false}
                 />
-                <div className="-translate-x-1/2 absolute bottom-2 left-1/2 max-w-sm px-4 md:bottom-4 lg:bottom-10">
+                <div className="absolute bottom-2 left-1/2 max-w-sm -translate-x-1/2 px-4 md:bottom-4 lg:bottom-10">
                   <div className="flex items-center gap-2 rounded-2xl bg-background/80 px-4 py-2">
                     <Loader2 className="size-4 animate-spin text-violet-400" />
                     <p className="font-medium text-gray-100 text-xl">

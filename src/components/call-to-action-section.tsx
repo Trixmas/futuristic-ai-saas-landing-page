@@ -29,8 +29,8 @@ export function CallToActionSection() {
       <div className="container">
         <SectionWrapperBorder hasBorderTop>
           <SectionWrapperContent className="relative isolate">
-            <div className="-z-10 absolute inset-0 bg-[radial-gradient(circle_farthest-corner,var(--color-fuchsia-900)_50%,var(--color-indigo-900)_75%,transparent)] [mask-image:radial-gradient(circle_farthest-side,black,transparent)]" />
-            <div className="-z-10 absolute inset-0">
+            <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_farthest-corner,var(--color-fuchsia-900)_50%,var(--color-indigo-900)_75%,transparent)] [mask-image:radial-gradient(circle_farthest-side,black,transparent)]" />
+            <div className="absolute inset-0 -z-10">
               <OrbitCircle className="size-[200px] border-white/30" />
               <OrbitCircle className="size-[350px] border-white/30" />
               <OrbitCircle className="size-[500px] border-white/30" />
@@ -51,7 +51,7 @@ export function CallToActionSection() {
               >
                 <MiniGlobe
                   size="lg"
-                  className="-translate-y-[200px] -rotate-135 translate-x-[200px]"
+                  className="translate-x-[200px] -translate-y-[200px] -rotate-135"
                 />
               </motion.div>
               <motion.div
@@ -69,7 +69,7 @@ export function CallToActionSection() {
                 <MiniGlobe
                   size="md"
                   color="teal"
-                  className="-translate-y-[100px] -rotate-135 translate-x-[500px]"
+                  className="translate-x-[500px] -translate-y-[100px] -rotate-135"
                 />
               </motion.div>
               <motion.div
@@ -87,7 +87,7 @@ export function CallToActionSection() {
                 <MiniGlobe
                   size="sm"
                   color="fuchsia"
-                  className="-rotate-45 translate-x-[400px] translate-y-[150px]"
+                  className="translate-x-[400px] translate-y-[150px] -rotate-45"
                 />
               </motion.div>
             </div>
@@ -96,7 +96,7 @@ export function CallToActionSection() {
               <span className="relative isolate">
                 <span>Sphereal</span>
                 <span
-                  className="-translate-y-1/2 absolute top-full left-0 h-4 w-full bg-[linear-gradient(to_right,var(--color-amber-300),var(--color-teal-300),var(--color-violet-400),var(--color-fuchsia-400))]"
+                  className="absolute top-full left-0 h-4 w-full -translate-y-1/2 bg-[linear-gradient(to_right,var(--color-amber-300),var(--color-teal-300),var(--color-violet-400),var(--color-fuchsia-400))]"
                   style={{
                     maskImage: `url(${UnderlineImage.src})`,
                     maskSize: "contain",

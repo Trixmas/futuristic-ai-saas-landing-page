@@ -19,10 +19,10 @@ export function SectionWrapperBorder({
     >
       {hasBorderTop && (
         <>
-          <div className="-translate-x-1/2 -translate-y-1/2 absolute top-0 left-0 bg-background">
+          <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 bg-background">
             <PlusIcon className="size-6" />
           </div>
-          <div className="-translate-y-1/2 absolute top-0 right-0 translate-x-1/2 bg-background">
+          <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 bg-background">
             <PlusIcon className="size-6" />
           </div>
         </>

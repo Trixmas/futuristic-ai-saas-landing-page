@@ -57,7 +57,7 @@ export function TestimonialsSection() {
                 layout
                 className="relative flex gap-12 rounded-3xl border-3 border-gradient px-6 py-16 max-md:flex-col md:mx-10 md:px-10 lg:mx-20 lg:px-16 lg:py-24"
               >
-                <QuoteIcon className="-rotate-180 -translate-y-1/2 absolute top-0 size-20 fill-current text-violet-400" />
+                <QuoteIcon className="absolute top-0 size-20 -translate-y-1/2 -rotate-180 fill-current text-violet-400" />
                 <AnimatePresence mode="wait" initial={false}>
                   {TESTIMONIALS.map((testimonial, index) =>
                     selectedTestimonialIndex === index ? (
@@ -105,7 +105,7 @@ export function TestimonialsSection() {
                         <motion.div
                           layoutId="testimonial-dot"
                           style={{ animationDuration: "0.5s" }}
-                          className="-z-10 absolute size-full rounded-full border-3 border-gradient"
+                          className="absolute -z-10 size-full rounded-full border-3 border-gradient"
                         />
                       )}
                       <div className="size-1.5 rounded-full bg-white" />

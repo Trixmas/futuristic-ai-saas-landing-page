@@ -7,7 +7,7 @@ export function OrbitCircle({ className, ...props }: OrbitCircleProps) {
   return (
     <div
       className={cn(
-        "absolute-center -z-10 isolate size-[200px] rounded-full border border-muted",
+        "absolute-center isolate -z-10 size-[200px] rounded-full border border-muted",
         className,
       )}
       {...props}

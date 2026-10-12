@@ -38,7 +38,7 @@ export function LogoTickerSection() {
             <h2 className="text-center font-bold text-muted-foreground text-xs uppercase tracking-widest">
               Empowering creators at leading companies
             </h2>
-            <div className="-mx-4 lg:-mx-8 mt-14 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+            <div className="-mx-4 mt-14 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] lg:-mx-8">
               <motion.div
                 initial={{ x: 0 }}
                 animate={{ x: "-50%" }}
